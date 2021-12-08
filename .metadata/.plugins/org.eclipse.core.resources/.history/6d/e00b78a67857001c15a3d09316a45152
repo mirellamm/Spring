@@ -1,0 +1,5 @@
+package ogr.genaration.lojasdejogos.model;
+
+public class Produto {
+
+}

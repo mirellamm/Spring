@@ -1,0 +1,30 @@
+package ogr.genaration.lojasdejogos.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+
+public class Produto {
+	@Entity 
+	@Table (name="tb_produto")
+	
+	public class produto{
+		
+		@Id 
+		@GenerateDvalue (strategy = GenerationType.IDENTITY)
+		private long id;
+		
+		@NotBlank (message = "o nome é obrigatorio")
+		private String nome; 
+		
+		@Notnull
+		private String descricao;
+		
+		@Notnull
+		private String valor; 
+	}
+	
+
+}
