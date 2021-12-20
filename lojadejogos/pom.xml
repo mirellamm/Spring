@@ -8,15 +8,23 @@
 		<version>2.6.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.genaration</groupId>
-	<artifactId>lojadejogos</artifactId>
+	<groupId>br.org.generation</groupId>
+	<artifactId>minhaLojaDeGames</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lojadejogos</name>
-	<description>Demo project for Spring Boot</description>
+	<name>minhaLojaDeGames</name>
+	<description>Minha Loja de Games</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
 	<dependencies>
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
